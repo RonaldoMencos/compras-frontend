@@ -14,6 +14,7 @@ import ChartBar from 'mdi-material-ui/ChartBar'
 import Receipt from 'mdi-material-ui/Receipt'
 import KeyboardReturn from 'mdi-material-ui/KeyboardReturn'
 import Tools from 'mdi-material-ui/Tools'
+import DoneIcon from '@mui/icons-material/Done';
 
 
 // ** Type import
@@ -61,6 +62,12 @@ const navigation = (): VerticalNavItemsType => {
       title: 'Cotización',
       icon: NotePlusOutline,
       path: '/cotizacion'
+    }
+    ,
+    {
+      title: 'Sel. Cotización',
+      icon: DoneIcon,
+      path: '/seleccionar-cotizacion'
     }
     ,
     {
