@@ -87,7 +87,7 @@ const ReporteGeneral = () => {
         <Typography>Fecha (Hasta)</Typography>
         <TextField id='fechaHasta' fullWidth type='date' variant='outlined' />
       </Grid>
-      <Grid container xs={12} justifyContent='center' direction='row' mt={4}>
+      <Grid container  justifyContent='center' direction='row' mt={4}>
         <Button variant='outlined' startIcon={<SearchIcon />}>
           Buscar
         </Button>
