@@ -61,9 +61,9 @@ const RevisionSolicitud = () => {
               <Table sx={{ minWidth: 650 }} aria-label='simple table'>
                 <TableHead>
                   <TableRow>
-                    <TableCell>No. Orden Compra</TableCell>
-                    <TableCell align='right'>No. Cotizacion</TableCell>
-                    <TableCell align='center'>Ver Cotización</TableCell>
+                    <TableCell>No. Solicitud Compra</TableCell>
+                    
+                    <TableCell align='center'>Ver Solicitud</TableCell>
                     <TableCell align='center'> </TableCell>
                     <TableCell align='left'> </TableCell>
                     <TableCell align='left'>Modificar</TableCell>
@@ -75,7 +75,7 @@ const RevisionSolicitud = () => {
                       <TableCell component='th' scope='row'>
                         {row.name}
                       </TableCell>
-                      <TableCell align='right'>{row.calories}</TableCell>
+                      
                       <TableCell align='center'>
                         {' '}
                         <Button variant='outlined' startIcon={<PreviewIcon />}>
