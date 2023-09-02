@@ -62,7 +62,7 @@ const Proveedores = () => {
                 <Table sx={{ minWidth: 650 }} aria-label='simple table'>
                   <TableHead>
                     <TableRow>
-                      <TableCell>Top Proveedores</TableCell>
+                      <TableCell>Nombre Proveedores</TableCell>
                       <TableCell align='right'>Total de compras</TableCell>
                       <TableCell align='center'>Ver Proveedor</TableCell>
                       <TableCell align='center'> </TableCell>
