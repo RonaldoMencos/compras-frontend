@@ -75,7 +75,7 @@ export const data3 = {
 
 const ReporteGeneral = () => {
   return (
-    <Grid container spacing={2} padding={8}>
+    <Grid container spacing={4} padding={8}>
       <Grid item xs={12} display='flex' justifyContent='center'>
         <Typography variant='h3'>Reportes Generales Compras</Typography>
       </Grid>
@@ -96,19 +96,19 @@ const ReporteGeneral = () => {
         </Button>
       </Grid>
       <Grid item xs={12} display='flex' justifyContent='center' mb={5}>
-        <Grid xs={12} md={8}>
+        <Grid item xs={12} md={8}>
           <Typography variant='h3'>Top Proveedores</Typography>
           <Bar options={options} data={data} />
         </Grid>
       </Grid>
       <Grid item xs={12} display='flex' justifyContent='center'  mb={4}>
-        <Grid xs={12} md={8}>
+        <Grid item xs={12} md={8}>
           <Typography variant='h3'>Top Solicitantes</Typography>
           <Bar options={options2} data={data2} />
         </Grid>
       </Grid>
       <Grid item xs={12} display='flex' justifyContent='center' mb={4}>
-        <Grid xs={12} md={8}>
+        <Grid item xs={12} md={8}>
         <Typography variant='h3'>Top Productos</Typography>
           <Bar options={options3} data={data3} />
         </Grid>

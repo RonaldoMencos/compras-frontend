@@ -26,7 +26,7 @@ const ReporteOrdenes = () => {
   ]
 
   return (
-    <Grid container spacing={2} padding={8}>
+    <Grid container spacing={4} padding={8}>
       <Grid item xs={12} display='flex' justifyContent='center'>
         <Typography variant='h3'>Reporte Ordenes de Compra</Typography>
       </Grid>
@@ -41,17 +41,17 @@ const ReporteOrdenes = () => {
         <Typography>Fecha Orden Compra (Hasta)</Typography>
         <TextField id='fechaHasta' fullWidth type='date' variant='outlined' />
       </Grid>
-      <Grid container xs={12} justifyContent='center' direction='row'>
-        <Button variant='outlined' sx={'margin:0.6rem 0.6rem'} startIcon={<SearchIcon />}>
+      <Grid container justifyContent='center' direction='row' gap={4} mt={3}>
+        <Button variant='outlined' startIcon={<SearchIcon />}>
           Buscar
         </Button>
-        <Button item variant='outlined' sx={'margin:0.6rem 0.6rem'} startIcon={<ImportExportIcon />}>
+        <Button variant='outlined' startIcon={<ImportExportIcon />}>
           Exportar
         </Button>
       </Grid>
       <Grid item xs={12} mt={8}>
         <TableContainer component={Paper}>
-          <Table sx={{ minWidth: 650 }} aria-label='simple table'>
+          <Table  aria-label='simple table'>
             <TableHead>
               <TableRow>
                 <TableCell>No. Orden Compra</TableCell>

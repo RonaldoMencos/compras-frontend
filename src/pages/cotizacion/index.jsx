@@ -42,7 +42,7 @@ const Cotizacion = () => {
   }
 
   return (
-    <Grid container spacing={3} padding={8}>
+    <Grid container spacing={4} padding={8}>
       <Grid item xs={12} display='flex' justifyContent='center'>
         <Typography variant='h3'>Cotización</Typography>
       </Grid>
