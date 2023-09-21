@@ -5,10 +5,10 @@ import MenuItem from '@mui/material/MenuItem'
 import FormControl from '@mui/material/FormControl'
 import Select from '@mui/material/Select'
 import TextField from '@mui/material/TextField'
-import { Typography } from '@mui/material'
+import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import AddIcon from '@mui/icons-material/Add'
-import PreviewIcon from '@mui/icons-material/Preview';
+import PreviewIcon from '@mui/icons-material/Preview'
 import Table from '@mui/material/Table'
 import TableBody from '@mui/material/TableBody'
 import TableCell from '@mui/material/TableCell'
@@ -16,19 +16,19 @@ import TableContainer from '@mui/material/TableContainer'
 import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
-import EditIcon from '@mui/icons-material/Edit';
+import EditIcon from '@mui/icons-material/Edit'
 
 const Cotizacion = () => {
-  function createData(name, calories, fat, carbs,date) {
-    return { name, calories, fat, carbs,date }
+  function createData(name, calories, fat, carbs, date) {
+    return { name, calories, fat, carbs, date }
   }
 
   const rows = [
-    createData('5898','4886', 'PROV1', 150.25, '12-02-2023'),
-    createData('5899','4886', 'PROV2', 4352.0, '12-02-2023'),
-    createData('5900','4886', 'PROV3', 160.0, '12-02-2023'),
-    createData('5901','4887', 'PROV1', 370.0, '12-02-2023'),
-    createData('5902','4887', 'PROV2', 160.0, '12-02-2023')
+    createData('5898', '4886', 'PROV1', 150.25, '12-02-2023'),
+    createData('5899', '4886', 'PROV2', 4352.0, '12-02-2023'),
+    createData('5900', '4886', 'PROV3', 160.0, '12-02-2023'),
+    createData('5901', '4887', 'PROV1', 370.0, '12-02-2023'),
+    createData('5902', '4887', 'PROV2', 160.0, '12-02-2023')
   ]
   const [solicitud, setsolicitud] = React.useState('')
   const [proveedor, setproveedor] = React.useState('')
@@ -43,6 +43,9 @@ const Cotizacion = () => {
 
   return (
     <Grid container spacing={3} padding={8}>
+      <Grid item xs={12} display='flex' justifyContent='center'>
+        <Typography variant='h3'>Cotización</Typography>
+      </Grid>
       <Grid item xs={12} md={6}>
         <FormControl fullWidth>
           <InputLabel id='labelSolicitud'>Solicitud</InputLabel>
