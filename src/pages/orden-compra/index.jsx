@@ -15,8 +15,8 @@ import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
 import EditIcon from '@mui/icons-material/Edit'
-import PreviewIcon from '@mui/icons-material/Preview';
-
+import PreviewIcon from '@mui/icons-material/Preview'
+import Typography from '@mui/material/Typography'
 
 const OrdenCompra = () => {
   function createData(name, calories, fat, carbs, date) {
@@ -33,9 +33,12 @@ const OrdenCompra = () => {
     setcotizacion(event.target.value)
   }
   return (
-    <Grid container spacing={3} padding={8}>
+    <Grid container spacing={4} padding={8}>
+      <Grid item xs={12} display='flex' justifyContent='center'>
+        <Typography variant='h3'>Orden de Compra</Typography>
+      </Grid>
       <Grid item xs={12} md={6}>
-        <FormControl fullWidth>
+        <FormControl >
           <InputLabel id='labelCotización'>Cotización</InputLabel>
           <Select
             labelId='labelCotización'
@@ -53,10 +56,10 @@ const OrdenCompra = () => {
         </FormControl>
       </Grid>
       <Grid item xs={12} md={6}>
-        <TextField id='monto' label='Monto' type='number' fullWidth />
+        <TextField id='monto' label='Monto' type='number' />
       </Grid>
       <Grid container justifyContent='center' mt={2}>
-        <Button variant='outlined'startIcon={<AddIcon />}>
+        <Button variant='outlined' startIcon={<AddIcon />}>
           Agregar
         </Button>
       </Grid>

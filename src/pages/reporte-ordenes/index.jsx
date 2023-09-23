@@ -9,7 +9,7 @@ import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
 import SearchIcon from '@mui/icons-material/Search'
-import ImportExportIcon from '@mui/icons-material/ImportExport';
+import ImportExportIcon from '@mui/icons-material/ImportExport'
 import Button from '@mui/material/Button'
 
 const ReporteOrdenes = () => {
@@ -26,26 +26,32 @@ const ReporteOrdenes = () => {
   ]
 
   return (
-    <Grid container spacing={2} padding={8}>
+    <Grid container spacing={4} padding={8}>
+      <Grid item xs={12} display='flex' justifyContent='center'>
+        <Typography variant='h3'>Reporte Ordenes de Compra</Typography>
+      </Grid>
+      <Grid item xs={12} display='flex' justifyContent='center'>
+        <Typography variant='h4'>(Por periodo de fechas)</Typography>
+      </Grid>
       <Grid item xs={12} md={6}>
-        <Typography>Fecha Orden (Desde)</Typography>
+        <Typography>Fecha Orden Compra (Desde)</Typography>
         <TextField id='fechaDesde' fullWidth type='date' variant='outlined' />
       </Grid>
       <Grid item xs={12} md={6}>
-        <Typography>Fecha Orden (Hasta)</Typography>
+        <Typography>Fecha Orden Compra (Hasta)</Typography>
         <TextField id='fechaHasta' fullWidth type='date' variant='outlined' />
       </Grid>
-      <Grid container xs={12} justifyContent='center' direction="row">
-          <Button variant='outlined' sx={'margin:0.6rem 0.6rem'} startIcon={<SearchIcon />}>
-            Buscar
-          </Button>
-          <Button item variant='outlined' sx={'margin:0.6rem 0.6rem'} startIcon={<ImportExportIcon />}>
-            Exportar
-          </Button>
+      <Grid container justifyContent='center' direction='row' gap={4} mt={3}>
+        <Button variant='outlined' startIcon={<SearchIcon />}>
+          Buscar
+        </Button>
+        <Button variant='outlined' startIcon={<ImportExportIcon />}>
+          Exportar
+        </Button>
       </Grid>
       <Grid item xs={12} mt={8}>
         <TableContainer component={Paper}>
-          <Table sx={{ minWidth: 650 }} aria-label='simple table'>
+          <Table  aria-label='simple table'>
             <TableHead>
               <TableRow>
                 <TableCell>No. Orden Compra</TableCell>

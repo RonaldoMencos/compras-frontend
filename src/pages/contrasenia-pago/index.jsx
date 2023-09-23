@@ -68,7 +68,7 @@ const ContraseniaPago = () => {
                   <TableRow>
                     <TableCell>Proveedor</TableCell>
                     <TableCell align='right'>No. Contraseña</TableCell>
-                    <TableCell align='center'>Ver Contraseña</TableCell>
+                    <TableCell align='center'>Ver Detalle</TableCell>
                     <TableCell align='right'>Monto Total</TableCell>
                     <TableCell align='right'>Fecha Creación</TableCell>
                     <TableCell align='center'>Imprimir</TableCell>
