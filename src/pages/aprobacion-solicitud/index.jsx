@@ -17,6 +17,7 @@ import Paper from '@mui/material/Paper'
 import EditIcon from '@mui/icons-material/Edit'
 import PreviewIcon from '@mui/icons-material/Preview';
 
+
 const AprobacionSolicitud = () => {
     function createData(name, calories, fat, carbs, date) {
         return { name, calories, fat, carbs, date }
@@ -60,7 +61,7 @@ const AprobacionSolicitud = () => {
                       <TableCell align='right'>No. Cotizacion</TableCell>
                       <TableCell align='center'>Ver Cotización</TableCell>
                       <TableCell align='center'> </TableCell>
-                      <TableCell align='right'>Acción</TableCell>
+                      <TableCell align='right'></TableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>

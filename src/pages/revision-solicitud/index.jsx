@@ -92,6 +92,9 @@ const RevisionSolicitud = () => {
                       </TableCell>
                     </TableRow>
                   ))}
+                                      <grid>
+                    <Button variant="contained">Enviar</Button>
+                    </grid>
                 </TableBody>
               </Table>
             </TableContainer>

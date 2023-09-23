@@ -25,7 +25,9 @@ const Solicitud = () => {
     
       const rows = [
         createData('Martillo', '5'),
-        createData('Desarmador', '15')
+        createData('Desarmador', '15'),
+        createData('Monitores', '2'),
+        createData('Pegamento (botellas)', '20')
       ]
     
       const [cotizacion, setcotizacion] = React.useState('')
@@ -57,11 +59,10 @@ const Solicitud = () => {
                 <Table sx={{ minWidth: 650 }} aria-label='simple table'>
                   <TableHead>
                     <TableRow>
-                      <TableCell>Productos</TableCell>
-                      <TableCell align='right'>Cantidad</TableCell>
-                      <TableCell align='center'>Ver Total</TableCell>
+                      <TableCell>Productos a solicitar</TableCell>
+                      <TableCell align='right'>Cantidad de Productos</TableCell>
+                      <TableCell align='center'></TableCell>
                       <TableCell align='center'> </TableCell>
-                      <TableCell align='right'> </TableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -73,9 +74,6 @@ const Solicitud = () => {
                         <TableCell align='right'>{row.calories}</TableCell>
                         <TableCell align='center'>
                           {' '}
-                          <Button variant='outlined' startIcon={<PreviewIcon />}>
-                            Ver
-                          </Button>
                         </TableCell>
                         <TableCell align='right'>{row.carbs}</TableCell>
                         <TableCell align='right'>{row.date}</TableCell>
@@ -90,6 +88,9 @@ const Solicitud = () => {
                         </TableCell>
                       </TableRow>
                     ))}
+                    <grid>
+                    <Button variant="contained">Detalle</Button>
+                    </grid>
                   </TableBody>
                 </Table>
               </TableContainer>
