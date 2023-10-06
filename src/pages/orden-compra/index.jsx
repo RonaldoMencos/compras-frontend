@@ -37,8 +37,8 @@ const OrdenCompra = () => {
       <Grid item xs={12} display='flex' justifyContent='center'>
         <Typography variant='h3'>Orden de Compra</Typography>
       </Grid>
-      <Grid item xs={12} md={6}>
-        <FormControl >
+      <Grid item xs={12} md={3}>
+        <FormControl fullWidth>
           <InputLabel id='labelCotización'>Cotización</InputLabel>
           <Select
             labelId='labelCotización'
@@ -55,10 +55,10 @@ const OrdenCompra = () => {
           </Select>
         </FormControl>
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={2} >
         <TextField id='monto' label='Monto' type='number' />
       </Grid>
-      <Grid container justifyContent='center' mt={2}>
+      <Grid container item xs={12} md={7}>
         <Button variant='outlined' startIcon={<AddIcon />}>
           Agregar
         </Button>

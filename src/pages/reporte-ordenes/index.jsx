@@ -33,11 +33,11 @@ const ReporteOrdenes = () => {
       <Grid item xs={12} display='flex' justifyContent='center'>
         <Typography variant='h4'>(Por periodo de fechas)</Typography>
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={3}>
         <Typography>Fecha Orden Compra (Desde)</Typography>
         <TextField id='fechaDesde' fullWidth type='date' variant='outlined' />
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={3}>
         <Typography>Fecha Orden Compra (Hasta)</Typography>
         <TextField id='fechaHasta' fullWidth type='date' variant='outlined' />
       </Grid>

@@ -47,7 +47,7 @@ const Cotizacion = () => {
         <Typography variant='h3'>Cotización</Typography>
       </Grid>
       <Grid item xs={12} md={6}>
-        <FormControl fullWidth>
+        <FormControl sx={{width:'50%'}}>
           <InputLabel id='labelSolicitud'>Solicitud</InputLabel>
           <Select
             labelId='labelSolicitud'
@@ -56,9 +56,9 @@ const Cotizacion = () => {
             label='Solicitud'
             onChange={handleChange}
           >
-            <MenuItem value={10}>4886</MenuItem>
-            <MenuItem value={20}>4887</MenuItem>
-            <MenuItem value={30}>4888</MenuItem>
+            <MenuItem value={10}>4889687</MenuItem>
+            <MenuItem value={20}>4889688</MenuItem>
+            <MenuItem value={30}>4889689</MenuItem>
           </Select>
         </FormControl>
       </Grid>
