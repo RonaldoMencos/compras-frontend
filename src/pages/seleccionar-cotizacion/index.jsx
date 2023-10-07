@@ -35,7 +35,7 @@ const SeleccionarCotizacion = () => {
       return (
         <Grid container spacing={3} padding={8}>
           <Grid item xs={12} md={6}>
-            <FormControl fullWidth>
+            <FormControl sx={{width:'50%'}}>
               <InputLabel id='labelCotización'>Cotización</InputLabel>
               <Select
                 labelId='labelCotización'
@@ -53,7 +53,7 @@ const SeleccionarCotizacion = () => {
             </FormControl>
           </Grid>
           <Grid item xs={12} md={6}>
-            <TextField id='monto' label='Monto' type='number' fullWidth />
+            <TextField id='monto' label='Monto' type='number' sx={{width:'25%'}} />
           </Grid>
           
           <Grid item xs={12}>

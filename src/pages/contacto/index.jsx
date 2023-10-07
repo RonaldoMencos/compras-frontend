@@ -45,7 +45,7 @@ const Contacto = () => {
         return (
           <Grid container spacing={3} padding={8}>
             <Grid item xs={12} md={6}>
-              <FormControl fullWidth>
+              <FormControl sx={{width:'50%'}}>
                 <InputLabel id='labelcodigo'>Código</InputLabel>
                 <Select
                   labelId='labelcodigo'
@@ -61,7 +61,7 @@ const Contacto = () => {
               </FormControl>
             </Grid>
             <Grid item xs={12} md={6}>
-              <FormControl fullWidth>
+              <FormControl sx={{width:'75%'}}>
                 <InputLabel id='labelProveedor'>Proveedor</InputLabel>
                 <Select
                   labelId='labelProveedor'
