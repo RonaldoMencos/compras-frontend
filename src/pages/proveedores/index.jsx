@@ -52,10 +52,15 @@ const Proveedores = () => {
                 </Select>
               </FormControl>
             </Grid>
-            <Grid container justifyContent='center' mt={2}>
+            <Grid container justifyContent='left' mt={2}>
               <Button variant='outlined'startIcon={<AddIcon />}>
                 Agregar Proveedor
               </Button>
+              <Button variant='outlined'startIcon={<AddIcon />}>
+                Eliminar Proveedor
+              </Button>
+
+
             </Grid>
             <Grid item xs={12}>
               <TableContainer component={Paper}>

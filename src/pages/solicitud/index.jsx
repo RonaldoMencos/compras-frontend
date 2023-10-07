@@ -16,7 +16,9 @@ import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
 import EditIcon from '@mui/icons-material/Edit'
 import DeleteIcon from '@mui/icons-material/Delete'
-import PreviewIcon from '@mui/icons-material/Preview';
+import SendIcon from '@mui/icons-material/Send'
+import Stack from '@mui/material/Stack'
+import PreviewIcon from '@mui/icons-material/Preview'
 
 const Solicitud = () => {
     function createData(name, calories, fat, carbs, date) {
@@ -24,10 +26,10 @@ const Solicitud = () => {
       }
     
       const rows = [
-        createData('Martillo', '5'),
-        createData('Desarmador', '15'),
-        createData('Monitores', '2'),
-        createData('Pegamento (botellas)', '20')
+        createData('Martillo', '- 5 +'),
+        createData('Desarmador', '- 15 +'),
+        createData('Monitores', '- 2 +'),
+        createData('Pegamento (botellas)', '- 20 +')
       ]
     
       const [cotizacion, setcotizacion] = React.useState('')
@@ -89,8 +91,12 @@ const Solicitud = () => {
                       </TableRow>
                     ))}
                     <grid>
-                    <Button variant="contained">Detalle</Button>
+                    <Button variant="contained">Ver Detalle</Button>
                     </grid>
+                    {' '}
+                    <Button variant="contained" endIcon={<SendIcon />}>
+                      Enviar
+                      </Button>
                   </TableBody>
                 </Table>
               </TableContainer>
